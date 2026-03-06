@@ -1,0 +1,157 @@
+:root {
+    --bg-main: #0c161d;       /* Fundo total conforme original */
+    --bg-input: #1c2b33;      /* Cor interna dos inputs */
+    --border-color: #36474f;  /* Cor das bordas sutis */
+    --btn-blue: #0064e0;      /* Azul Meta (botão desativado/fundo) */
+    --btn-blue-active: #0095f6;
+    --text-white: #f5f5f5;
+    --text-gray: #a8b3c1;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-main);
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.top-logo img {
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.login-container h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+form { display: flex; flex-direction: column; gap: 14px; }
+
+input {
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 12px; /* Meta usa arredondamento médio, não pílula total nos inputs */
+    height: 54px;
+    padding: 0 16px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder { color: var(--text-gray); }
+
+.btn-primary {
+    background-color: #002d62; /* Tom escuro quando desativado */
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 25px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-primary.active {
+    background-color: var(--btn-blue-active);
+    color: white;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line { flex: 1; height: 1px; background: var(--border-color); }
+
+.or { padding: 0 15px; color: var(--text-gray); font-size: 13px; }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-white);
+    border-radius: 25px;
+    height: 48px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.fb-icon { height: 20px; }
+
+.create-account { margin-top: 0px; }
+
+.meta-footer-logo { margin-top: 50px; opacity: 0.8; }
+.meta-footer-logo img { height: 20px; }
+
+footer {
+    padding: 20px;
+    background-color: #000;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-content a {
+    color: var(--text-gray);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* ... (Mantenha o seu CSS anterior e adicione/ajuste isto) */
+
+.btn-primary {
+    background-color: #002d62; 
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 25px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+/* Classe aplicada via JavaScript quando os campos estão preenchidos */
+.btn-primary.active {
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
+}
